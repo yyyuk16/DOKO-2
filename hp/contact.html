@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT | JAZZ HACKERS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">JAZZ HACKERS</div>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="history.html">HISTORY</a></li>
+            <li><a href="members.html">MEMBERS</a></li>
+            <li><a href="contact.html" class="active">CONTACT</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1 style="text-align: center;" class="fade-in">Get in Touch</h1>
+        <p style="text-align: center; margin-bottom: 3rem;" class="fade-in">Interested in this team? Send us a message.
+        </p>
+
+        <form class="contact-form fade-in">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn" style="width: 100%;">SEND MESSAGE</button>
+        </form>
+
+        <div style="text-align: center; margin-top: 4rem;" class="fade-in">
+            <h3>Or find us at</h3>
+            <p>Studio J, 1-2-3 Jazz Street, Tokyo</p>
+            <p>contact@jazzhackers.com</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 JAZZ HACKERS. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

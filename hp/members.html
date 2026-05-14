@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEMBERS | JAZZ HACKERS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">JAZZ HACKERS</div>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="history.html">HISTORY</a></li>
+            <li><a href="members.html" class="active">MEMBERS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1 style="text-align: center;" class="fade-in">The Members</h1>
+        <p style="text-align: center; margin-bottom: 3rem;" class="fade-in">Click on a member to see their profile.</p>
+
+        <div class="members-grid">
+            <!-- Member 1 -->
+            <div class="member-card fade-in" onclick="openModal('member1')">
+                <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="Member 1" class="member-img">
+                <div class="member-info">
+                    <h3 class="member-name">"Ts"テナーサックス君</h3>
+                    <p class="member-role">22members</p>
+                </div>
+            </div>
+
+            <!-- Member 2 -->
+            <div class="member-card fade-in" onclick="openModal('member2')">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="Member 2" class="member-img">
+                <div class="member-info">
+                    <h3 class="member-name">"Gt"ギターちゃん</h3>
+                    <p class="member-role">22members</p>
+                </div>
+            </div>
+
+            <!-- Member 3 -->
+            <div class="member-card fade-in" onclick="openModal('member3')">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="Member 3" class="member-img">
+                <div class="member-info">
+                    <h3 class="member-name">"Gt"ギター君</h3>
+                    <p class="member-role">23members</p>
+                </div>
+            </div>
+
+            <!-- Member 4 -->
+            <div class="member-card fade-in" onclick="openModal('member4')">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="Member 4" class="member-img">
+                <div class="member-info">
+                    <h3 class="member-name">"Ba"ベース君</h3>
+                    <p class="member-role">23members</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modals -->
+    <div id="member1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('member1')">&times;</span>
+            <h2>"Ts"テナーサックス君</h2>
+            <p class="member-role">22members</p>
+            <hr style="border-color: var(--accent-color); margin: 1rem 0;">
+            <p>テナーサックス担当。頑張ってみんなで力をつけるぞー！おー！！</p>
+            <p><strong>Favorite Song:</strong> Just the two of us</p>
+        </div>
+    </div>
+
+    <div id="member2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('member2')">&times;</span>
+            <h2>"Gt"ゆきちゃん</h2>
+            <p class="member-role">22members</p>
+            <hr style="border-color: var(--accent-color); margin: 1rem 0;">
+            <p>ギター担当。大学院進学組。研究のデータ収集のためにpython等を使ったフォームを作成したりしている。</p>
+            <p><strong>Favorite Song:</strong> 明日も</p>
+        </div>
+    </div>
+
+    <div id="member3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('member3')">&times;</span>
+            <h2>"Gt"貝瀬悠希</h2>
+            <p class="member-role">23members</p>
+            <hr style="border-color: var(--accent-color); margin: 1rem 0;">
+            <p>ハッカソンがんばろう。</p>
+            <p><strong>Favorite Song:</strong> 石の教会</p>
+        </div>
+    </div>
+
+    <div id="member4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('member4')">&times;</span>
+            <h2>"Ba"カンバ</h2>
+            <p class="member-role">23members</p>
+            <hr style="border-color: var(--accent-color); margin: 1rem 0;">
+            <p>ベース担当。元部長。機械学習系の研究室に所属している。3年前期の授業ではPythonを用いてRaspberry Piの制御を行う実験などを行った。</p>
+            <p><strong>Favorite Song:</strong> Detroit</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 JAZZ HACKERS. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Modal Logic
+        function openModal(id) {
+            document.getElementById(id).classList.add('active');
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.remove('active');
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function (event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.classList.remove('active');
+            }
+        }
+    </script>
+</body>
+
+</html>
